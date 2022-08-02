@@ -1,7 +1,8 @@
 {
   "root": true,
   "ignorePatterns": [
-    "projects/**/*"
+    "projects/**/*",
+    "**/*.spec.ts"
   ],
   "overrides": [
     {
@@ -39,31 +40,82 @@
         "curly": "error",
         "default-case": "error",
         "eqeqeq": "error",
-        "max-depth": ["error", 4],
-        "max-lines": ["error", 200],
-        "max-lines-per-function": ["error", 20],
-        "max-params": ["error", 6],
+        "max-depth": [
+          "error",
+          4
+        ],
+        "max-lines": [
+          "error",
+          200
+        ],
+        "max-lines-per-function": [
+          "error",
+          20
+        ],
+        "max-params": [
+          "error",
+          6
+        ],
         "no-alert": "error",
         "no-console": "error",
-        "no-empty-function": ["error", { "allow": ["constructors"] }],
+        "no-empty-function": [
+          "error",
+          {
+            "allow": [
+              "constructors"
+            ]
+          }
+        ],
         "no-lonely-if": "error",
         "no-nested-ternary": "error",
         "no-var": "error",
         "operator-assignment": "error",
         "prefer-const": "error",
         "vars-on-top": "warn",
-        "object-curly-spacing": ["error", "always"],
+        "object-curly-spacing": [
+          "error",
+          "always"
+        ],
         "arrow-spacing": "error",
-        // "brace-style": "error",
-        "comma-dangle": ["error", "never"],
-        "comma-spacing": ["error", { "before": false, "after": true }],
-        "comma-style": ["error", "last"],
-        "func-call-spacing": ["error", "never"],
-        "indent": ["error", "tab",  { "SwitchCase": 1 }],
+        "comma-dangle": [
+          "error",
+          "never"
+        ],
+        "comma-spacing": [
+          "error",
+          {
+            "before": false,
+            "after": true
+          }
+        ],
+        "comma-style": [
+          "error",
+          "last"
+        ],
+        "func-call-spacing": [
+          "error",
+          "never"
+        ],
+        "indent": [
+          "error",
+          "tab",
+          {
+            "SwitchCase": 1
+          }
+        ],
         "key-spacing": "error",
-        "semi": ["error", "always"],
-        "quotes": ["error", "double"],
-        "semi-style": ["error", "last"]
+        "semi": [
+          "error",
+          "always"
+        ],
+        "quotes": [
+          "error",
+          "double"
+        ],
+        "semi-style": [
+          "error",
+          "last"
+        ]
       }
     },
     {
@@ -74,8 +126,19 @@
         "plugin:@angular-eslint/template/recommended"
       ],
       "rules": {
-        "max-lines": ["error", 200]
+        "max-lines": [
+          "error",
+          200
+        ]
       }
+    },
+    {
+      "files": [
+        "*.ts"
+      ],
+      "extends": [
+        "plugin:@ngrx/recommended-requiring-type-checking"
+      ]
     }
   ]
 }
