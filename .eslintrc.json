@@ -7,7 +7,7 @@
   "overrides": [
     {
       "files": [
-        "*.ts"
+        "src/*.ts"
       ],
       "parserOptions": {
         "project": [
@@ -134,7 +134,7 @@
     },
     {
       "files": [
-        "*.ts"
+        "src/*.ts"
       ],
       "extends": [
         "plugin:@ngrx/recommended-requiring-type-checking"
